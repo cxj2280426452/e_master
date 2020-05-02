@@ -1,0 +1,40 @@
+page{
+	background: #F6F6F6;
+}
+.list{
+	@include wh(750upx,180upx);
+	background: white;
+	margin-top: 27upx;
+	
+	.item{
+		@include wh(100%,90upx);
+		@include flex(center);
+		
+		text{
+			@include wh(150upx);
+			@include fonts(28upx,#313131);
+			margin-left: 72upx;
+		}
+		
+		input{
+			@include wh(470upx,70upx);
+			@include fonts(28upx,#313131);
+		}
+	}
+	
+	.item:first-child{
+		border-bottom: 1upx solid #DDDDDD;
+	}
+	
+}
+
+.submit-btn{
+	@include wh(710upx,86upx);
+	background: #4A86FD;
+	box-shadow:0upx 2upx 4upx 0upx rgba(74,134,253,1);
+	text-align: center;
+	line-height: 86upx;
+	@include fonts(28upx,#FFFFFF);
+	margin: auto;
+	margin-top: 42upx;
+}

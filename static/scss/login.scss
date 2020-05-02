@@ -1,0 +1,30 @@
+page{
+	background: white;
+}
+.content{
+	@include wh(750upx,100vh);
+
+	.logo{
+		
+		@include wh(250upx,250upx);
+		margin:auto;
+		margin-top:200upx;
+		
+		image{
+			
+			@include wh(250upx,250upx);
+		}
+	}
+	
+	.btn{
+		@include wh(220upx,220upx);
+		border-radius: 100%;
+		text-align: center;
+		line-height: 220upx;
+		@include fonts(35upx,#4985FD);
+		margin: auto;
+		border:2upx solid #4985FD;
+		background: white;
+		margin-top: 100upx;
+	}
+}

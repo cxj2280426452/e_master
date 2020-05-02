@@ -1,0 +1,61 @@
+.comment{
+	@include wh(750upx);
+	background: white;
+	
+	.list{
+		@include wh(100%);
+		border-bottom: 1upx solid #E8E8E8;
+		padding-bottom: 20upx;
+	}
+	
+	.comment-content{
+		@include wh(710upx);
+		margin: auto;
+		padding-top: 1upx;
+		
+		.top{
+			@include wh(100%,72upx);
+			@include flex(flex-start,space-between);
+			margin-top: 16upx;
+			
+			.top-right{
+				@include flex();
+				
+				.header{
+					@include wh(72upx,72upx);
+					border-radius: 100%;
+				}
+				.name{
+					@include wh(auto,72upx);
+					margin-left: 23upx;
+					
+					.name-1{
+						@include fonts(26upx,#3A3A3A,600);
+					}
+					.name-2{
+						@include flex(center);
+						margin-top: 10upx;
+						
+						text{
+							@include fonts(20upx,#545454);
+						}
+					}
+				}
+			}
+			
+			.top-left{
+				@include fonts(20upx,#B5B5B5);
+			}
+		}
+		
+		.comment-text{
+			@include wh(600upx);
+			margin-left: 95upx;
+			margin-top: 23upx;
+			@include fonts(22upx,#464646);
+		}
+	}
+}
+uni-rate{
+	margin-left: 10upx;
+}

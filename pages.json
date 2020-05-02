@@ -1,0 +1,78 @@
+{
+	"pages": [{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/apply/apply",
+			"style": {
+				"navigationBarTitleText": "入驻申请"
+			}
+		},
+		{
+			"path": "pages/wallet/wallet",
+			"style": {
+				"navigationBarTitleText": "我的余额"
+			}
+		},
+		{
+			"path": "pages/state/state",
+			"style": {
+				"navigationBarTitleText": "审核状态"
+			}
+		},
+		{
+			"path": "pages/commentList/commentList",
+			"style": {
+				"navigationBarTitleText": "全部评论",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/confirmOrder/confirmOrder",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/orderInfo/orderInfo",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		}, {
+			"path": "pages/userProtocol/userProtocol",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/confirmOrderForm/confirmOrderForm",
+			"style": {
+				"navigationBarTitleText": "确认订单完成"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}, {
+			"path": "pages/bank/bank",
+			"style": {
+				"navigationBarTitleText": "绑定银行卡"
+			}
+		}, {
+			"path": "pages/record/record",
+			"style": {
+				"navigationBarTitleText": "流水记录"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "e家小师傅",
+		"navigationBarBackgroundColor": "#4380EF",
+		"backgroundColor": "#F6F6F6"
+	}
+}

@@ -1,0 +1,46 @@
+//文字超出一行省略号
+%text-overflow {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+//滑动容器
+%scroll-view{
+	white-space: nowrap;
+	overflow: auto;
+}
+
+//文字超出多行省略号
+@mixin text-overflow-many($line:2) {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+	overflow: hidden;
+}
+
+//定义宽高
+@mixin wh($width,$height:auto){
+	width:$width;
+	height:$height;
+}
+
+//弹性盒子布局
+@mixin flex($align-items:flex-start,$justify-content:flex-start){
+	display: flex;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}
+
+//设置文字样式
+@mixin fonts($font-size:26px,$color:#ffffff,$font-weight:400){
+	font-size:$font-size;
+	font-family:PingFangSC-Regular;
+	font-weight:$font-weight;
+	color:$color;
+}
+@mixin background-linear-gradient($background,$box-shadow,$border-radius) {
+	background:$background;
+	box-shadow:$box-shadow;
+	border-radius:$border-radius;
+}

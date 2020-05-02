@@ -1,0 +1,49 @@
+page{
+	background: #F6F6F6;
+}
+.content{
+	@include wh(750upx);
+	background: white;
+	margin-top: 26upx;
+	
+	.item{
+		@include wh(100%,139upx);
+		border-bottom: 1upx solid #DDDDDD;
+		@include flex(content,content);
+		
+		.item-content{
+			@include wh(664upx);
+			margin: auto;
+			
+			.one{
+				@include wh(100%);
+				@include flex(content,space-between);
+				
+				text:first-child{
+					@include fonts(30upx,#292929);
+				}
+				
+				text:last-child{
+					@include fonts(26upx,#7ED321);
+				}
+			}
+			
+			.two{
+				@include wh(100%);
+				@include flex(content,space-between);
+				margin-top: 18upx;
+				
+				text:first-child{
+					@include fonts(24upx,rgba(157,157,157,1));
+				}
+				
+				text:last-child{
+					@include fonts(26upx,#7ED321);
+				}
+			}
+			.xiaofei{
+				color: rgba(255,46,72,1) !important;
+			}
+		}
+	}
+}

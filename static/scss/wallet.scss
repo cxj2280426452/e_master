@@ -1,0 +1,110 @@
+page{
+	background: #F6F6F6;
+}
+.head{
+	@include wh(750upx,292upx);
+	background:rgba(155,198,255,1);
+	padding-top: 1upx;
+	
+	.record{
+		@include wh(682upx);
+		@include flex(center,space-between);
+		margin: auto;
+		margin-top: 20upx;
+		
+		.record-list{
+			@include wh(136upx,59upx);
+			text-align: center;
+			line-height: 59upx;
+			@include fonts(24upx,#FFFFFF);
+			border-radius:38upx;
+			background:rgba(116,165,255,1);
+		}
+	}
+	.title{
+		@include wh(100%);
+		text-align: center;
+		@include fonts(28upx,#FFFFFF);
+		margin-top: 10upx;
+	}
+	.price{
+		@include wh(100%);
+		text-align: center;
+		@include fonts(70upx,#FFFFFF);
+	}
+}
+.bank-card{
+	@include wh(750upx,86upx);
+	background: white;
+	@include flex(center,center);
+	
+	.bank-content{
+		@include wh(678upx);
+		@include flex(center,space-between);
+		
+		text{
+			@include fonts(28upx,#313131);
+		}
+		
+		image{
+			@include wh(14upx,26upx);
+		}
+	}
+}
+.withdraw{
+	@include wh(750upx,238upx);
+	background: white;
+	margin-top: 19upx;
+	padding-top: 1upx;
+	
+	.title{
+		@include wh(678upx);
+		@include fonts(24upx,#8F8F8F);
+		margin: auto;
+		margin-top: 23upx;
+	}
+	
+	.price{
+		@include wh(100%,118upx);
+		border-bottom: 1upx solid #DDDDDD;
+		@include flex(center);
+		
+		.content{
+			@include wh(678upx);
+			margin: auto;
+			@include flex(flex-end);
+			
+			.price-icon{
+				@include fonts(30upx,#FF2E48);
+			}
+			
+			input{
+				@include wh(300upx,50upx);
+				margin-left: 15upx;
+				@include fonts(50upx,#2C2C2C,600);
+			}
+		}
+	}
+	.remd{
+		@include wh(678upx,60upx);
+		margin: auto;
+		line-height: 60upx;
+		@include fonts(24upx,#B9B9B9);
+	}
+}
+
+.submit-btn{
+	@include wh(710upx,86upx);
+	background: #4A86FD;
+	box-shadow:0upx 2upx 4upx 0upx rgba(74,134,253,1);
+	text-align: center;
+	line-height: 86upx;
+	@include fonts(28upx,#FFFFFF);
+	margin: auto;
+	margin-top: 42upx;
+}
+.amount{
+	@include wh(80%,auto);
+	@include flex(center,space-between);
+	margin: auto;
+}
